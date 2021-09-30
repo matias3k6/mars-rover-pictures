@@ -16,7 +16,7 @@ const DatePicker = ({
 		'(?:19|20)[0-9]{2}-(?:(?:0[1-9]|1[0-2])/(?:0[1-9]|1[0-9]|2[0-9])|(?:(?!02)(?:0[1-9]|1[0-2])/(?:30))|(?:(?:0[13578]|1[02])-31))';
 
 	return (
-		<Box width={{ sm: '100%', lg: '14rem' }} paddingY={'.5rem'}>
+		<Box width={'14rem'} paddingY={'.5rem'}>
 			<Text as={'label'} htmlFor={'date'}>
 				{label}
 			</Text>

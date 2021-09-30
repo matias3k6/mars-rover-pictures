@@ -11,7 +11,7 @@ const Select = ({
 	...props
 }: SelectProps): JSX.Element => {
 	return (
-		<Box width={{ sm: '100%', lg: '14rem' }} paddingY={'.5rem'}>
+		<Box width={'14rem'} paddingY={'.5rem'}>
 			<Text as={'label'} htmlFor={'date'}>
 				{label}
 			</Text>
