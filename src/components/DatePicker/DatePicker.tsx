@@ -11,9 +11,12 @@ const DatePicker = ({
 	maxDate,
 	...props
 }: DatePickerProps): JSX.Element => {
-	console.log(date);
+	// This locale pattern date is only for Netifly, please ignore it (tbh I don't want configure a locale just for that)
+	const fakeLocalePattern =
+		'(?:19|20)[0-9]{2}-(?:(?:0[1-9]|1[0-2])/(?:0[1-9]|1[0-9]|2[0-9])|(?:(?!02)(?:0[1-9]|1[0-2])/(?:30))|(?:(?:0[13578]|1[02])-31))';
+
 	return (
-		<Box width={'16rem'} paddingY={'.5rem'}>
+		<Box width={{ sm: '100%', lg: '14rem' }} paddingY={'.5rem'}>
 			<Text as={'label'} htmlFor={'date'}>
 				{label}
 			</Text>
@@ -23,7 +26,7 @@ const DatePicker = ({
 				id={'date'}
 				value={date}
 				max={maxDate}
-				pattern="(?:19|20)\[0-9\]{2}-(?:(?:0\[1-9\]|1\[0-2\])/(?:0\[1-9\]|1\[0-9\]|2\[0-9\])|(?:(?!02)(?:0\[1-9\]|1\[0-2\])/(?:30))|(?:(?:0\[13578\]|1\[02\])-31))"
+				pattern={fakeLocalePattern}
 				isRequired
 				{...props}
 			/>

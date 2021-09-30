@@ -26,7 +26,7 @@ const Pagination = (): JSX.Element => {
 					icon={<FaChevronLeft />}
 					disabled={backIsDisabled}
 					onClick={back}
-					colorScheme={backIsDisabled ? 'gray' : 'green'}
+					colorScheme={backIsDisabled ? 'gray' : 'blue'}
 				/>
 				<IconButton
 					aria-label={'button-back'}
@@ -34,7 +34,7 @@ const Pagination = (): JSX.Element => {
 					icon={<FaChevronRight />}
 					disabled={fordwardIsDisabled}
 					onClick={forwdard}
-					colorScheme={fordwardIsDisabled ? 'gray' : 'green'}
+					colorScheme={fordwardIsDisabled ? 'gray' : 'blue'}
 				/>
 			</HStack>
 		</Box>

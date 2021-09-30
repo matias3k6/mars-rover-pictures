@@ -12,7 +12,7 @@ const TextField = ({
 	...props
 }: TextFieldProps): JSX.Element => {
 	return (
-		<Box width={'16rem'} paddingY={'.5rem'}>
+		<Box width={'14rem'} paddingY={'.5rem'}>
 			<Text as={'label'} htmlFor={'text-field'}>
 				{label}
 			</Text>

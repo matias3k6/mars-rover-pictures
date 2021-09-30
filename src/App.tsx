@@ -1,7 +1,8 @@
 import React from 'react';
-import { ChakraProvider, theme } from '@chakra-ui/react';
+import { ChakraProvider } from '@chakra-ui/react';
+import { RoversProvider } from 'contexts/Rovers';
 import AppRouter from 'router/Router';
-import RoversProvider from 'contexts/Rovers/Provider';
+import theme from 'theme';
 
 export const App = (): JSX.Element => (
 	<ChakraProvider theme={theme}>

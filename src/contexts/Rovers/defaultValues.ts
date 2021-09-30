@@ -9,6 +9,16 @@ export const roversDefaultValues: RoversInitialValues = {
 	handleChangeFilter: () => {
 		return;
 	},
+	handleStoreFilter: () => {
+		return;
+	},
+	handleRemoveFilter: () => {
+		return;
+	},
+	handleSelectFilter: () => {
+		return;
+	},
+	savedFilters: [],
 	roversData: {
 		pictures: [],
 	},

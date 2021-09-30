@@ -4,19 +4,21 @@ import { Text } from '@chakra-ui/layout';
 import Gallery from 'components/Gallery';
 import Pagination from 'components/Pagination';
 import Filters from 'components/Filters';
+import { Divider } from '@chakra-ui/react';
 
 export const HomeView = (): JSX.Element => (
 	<Layout>
 		<Text
-			textAlign={'center'}
 			as={'h1'}
-			pt={'4rem'}
+			textAlign={'center'}
 			fontWeight={'bold'}
 			fontSize={'2xl'}
+			pt={'4rem'}
 		>
 			Mars Rovers Gallery
 		</Text>
 		<Filters />
+		<Divider />
 		<Gallery />
 		<Pagination />
 	</Layout>
