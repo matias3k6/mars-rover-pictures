@@ -1,5 +1,5 @@
-import { RoverType } from 'global/rovers';
-import { formatDateToISOString } from 'utils/formatDate';
+import { RoverType } from 'global/types';
+import { formatDate } from 'utils/formatDate';
 import { RoversInitialValues } from './types';
 
 export const roversDefaultValues: RoversInitialValues = {
@@ -14,7 +14,7 @@ export const roversDefaultValues: RoversInitialValues = {
 	},
 	roversFilters: {
 		rover: RoverType.Curiosity,
-		earth_date: formatDateToISOString(new Date()),
+		earth_date: formatDate(new Date()),
 		page: 1,
 	},
 };

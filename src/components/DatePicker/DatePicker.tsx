@@ -9,7 +9,9 @@ const DatePicker = ({
 	date,
 	handleChange,
 	maxDate,
+	...props
 }: DatePickerProps): JSX.Element => {
+	console.log(date);
 	return (
 		<Box width={'16rem'} paddingY={'.5rem'}>
 			<Text as={'label'} htmlFor={'date'}>
@@ -21,7 +23,9 @@ const DatePicker = ({
 				id={'date'}
 				value={date}
 				max={maxDate}
+				pattern="(?:19|20)\[0-9\]{2}-(?:(?:0\[1-9\]|1\[0-2\])/(?:0\[1-9\]|1\[0-9\]|2\[0-9\])|(?:(?!02)(?:0\[1-9\]|1\[0-2\])/(?:30))|(?:(?:0\[13578\]|1\[02\])-31))"
 				isRequired
+				{...props}
 			/>
 		</Box>
 	);

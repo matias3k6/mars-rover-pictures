@@ -1,4 +1,4 @@
-import { RoverType } from 'global/rovers';
+import { RoverType } from 'global/types';
 
 export const rovers = [
 	{

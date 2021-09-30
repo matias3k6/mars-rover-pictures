@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Box, SimpleGrid, Text } from '@chakra-ui/layout';
 import { GalleryGridProps } from './types';
 import Picture from 'components/Picture';
-import { RoverPicture } from 'global/rovers';
+import { RoverPicture } from 'global/types';
 import Dialog from 'components/Dialog';
 
 const GalleryGrid = ({ pictures }: GalleryGridProps): JSX.Element => {
