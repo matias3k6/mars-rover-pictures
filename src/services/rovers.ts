@@ -1,7 +1,7 @@
 import { AxiosResponse } from 'axios';
 import config from 'config';
 import { RoverFilters } from 'contexts/Rovers/types';
-import { RoverPictures, RoverType } from 'global/rovers';
+import { RoverPictures, RoverType } from 'global/types';
 import instance from './axios';
 
 const { rovers } = config;

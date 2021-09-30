@@ -1,4 +1,4 @@
-import { Camera, RoverPicture, RoverType } from 'global/rovers';
+import { RoverPicture, RoverType } from 'global/types';
 
 export interface RoversProviderProps {
 	children: JSX.Element | JSX.Element[];

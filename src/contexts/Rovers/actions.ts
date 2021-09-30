@@ -1,9 +1,9 @@
-import { RoverPicture } from 'global/rovers';
+import { RoverPicture } from 'global/types';
 import { getRooverPictures } from 'services/rovers';
 import { RoverFilters } from './types';
 
 export const getPictures = async (
-	filters: RoverFilters,
+	filters: RoverFilters
 ): Promise<RoverPicture[] | Error> => {
 	try {
 		const pictures = await getRooverPictures(filters);
