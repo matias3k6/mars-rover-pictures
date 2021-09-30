@@ -11,9 +11,10 @@ const getRover = (roverName: RoverType): string => rovers[roverName];
 export const getRooverPictures = (
 	filters: RoverFilters
 ): Promise<AxiosResponse<RoverPictures>> => {
-	const { rover, currentPage, earth_date, sol } = filters;
+	const { rover, earth_date, sol, page, camera } = filters;
 	const params = `&
-		${sol ? sol : `earth_date=${earth_date}`}
+		${sol ? `sol=${sol}` : `earth_date=${earth_date}`}
+		${camera ? `&camera=${camera}` : ''}
 	`;
-	return instance.get(`${getRover(rover)}?page=${currentPage}${params}`);
+	return instance.get(`${getRover(rover)}?page=${page}${params}`);
 };

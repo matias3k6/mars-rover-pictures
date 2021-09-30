@@ -5,6 +5,6 @@ export const routes: AppRoute[] = [
 	{
 		label: 'Home',
 		path: '/',
-		view: HomeView,
+		View: HomeView,
 	},
 ];

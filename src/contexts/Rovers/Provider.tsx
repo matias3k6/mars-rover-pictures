@@ -34,11 +34,6 @@ const RoversProvider = ({ children }: RoversProviderProps): JSX.Element => {
 			updateRoversData('pictures', pictures);
 		}
 	};
-
-	const handleChangePage = (newPage: number) => {
-		updateRoversFilters('currentPage', newPage);
-	};
-
 	useEffect(() => {
 		handlePictures();
 	}, [roversFilters]);
@@ -48,7 +43,6 @@ const RoversProvider = ({ children }: RoversProviderProps): JSX.Element => {
 			value={{
 				roversData,
 				roversFilters,
-				handleChangePage,
 				handleChangeFilter: updateRoversFilters,
 				handlePictures,
 			}}
