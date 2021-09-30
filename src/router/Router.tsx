@@ -6,9 +6,9 @@ const AppRouter = (): JSX.Element => {
 	return (
 		<Router>
 			<Switch>
-				{routes.map((route, index) => (
-					<Route key={index} path={route.path}>
-						{route.view()}
+				{routes.map(({path, View}, index) => (
+					<Route key={index} path={path}>
+						<View />
 					</Route>
 				))}
 			</Switch>
