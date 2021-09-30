@@ -9,7 +9,7 @@ const Layout = ({ children }: LayoutProps): JSX.Element => {
 			<Box pos={'absolute'} right={0} top={0} p={'1rem'}>
 				<ThemeSwitcher />
 			</Box>
-			<VStack spacing={'2rem'}>{children}</VStack>
+			<VStack spacing={'1rem'}>{children}</VStack>
 		</Container>
 	);
 };
